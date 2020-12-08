@@ -33,8 +33,8 @@ const App = () => {
       setUser(signedIn)
     })
     .catch(err => {
-      console.log(err);
-      console.log(err.message);
+      // console.log(err);
+      // console.log(err.message);
     })
   }
 
