@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 
 
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig); //firebase.config.js 
 
 
 
@@ -61,8 +61,6 @@ const App = () => {
 
   return (
     <div className="App">
-      
-
 
       {
         user.isSignedIn && <div>
@@ -74,9 +72,8 @@ const App = () => {
 
 
 {
-        user.isSignedIn ? <button onClick={handleSignOut} style={{backgroundColor:'green', color: 'red', height: '80px' ,width: '300px', borderRadius: '5px', marginTop: '50px'}}><h2>click here to log out</h2> </button>
-        : <button onClick={handleSignIn}
-        style={{backgroundColor:'green', color: 'red', height: '80px' ,width: '300px', borderRadius: '5px', marginTop: '50px'}}> <h2>click here to log in</h2> </button>
+        user.isSignedIn ? <button onClick={handleSignOut}><h2>click here to log out</h2> </button>
+        : <button onClick={handleSignIn}> <h2>click here to log in</h2> </button>
         
       }
     </div>
