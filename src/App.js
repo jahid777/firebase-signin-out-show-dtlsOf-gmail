@@ -74,9 +74,9 @@ const App = () => {
 
 
 {
-        user.isSignedIn ? <button onClick={handleSignOut} style={{backgroundColor:'green', color: 'red', height: '80px' ,width: '300px', borderRadius: '5px', marginTop: '50px'}}><h2>jhumu click here to log out</h2> </button>
+        user.isSignedIn ? <button onClick={handleSignOut} style={{backgroundColor:'green', color: 'red', height: '80px' ,width: '300px', borderRadius: '5px', marginTop: '50px'}}><h2>click here to log out</h2> </button>
         : <button onClick={handleSignIn}
-        style={{backgroundColor:'green', color: 'red', height: '80px' ,width: '300px', borderRadius: '5px', marginTop: '50px'}}> <h2>jhumu click here to log in</h2> </button>
+        style={{backgroundColor:'green', color: 'red', height: '80px' ,width: '300px', borderRadius: '5px', marginTop: '50px'}}> <h2>click here to log in</h2> </button>
         
       }
     </div>
